@@ -1,4 +1,4 @@
-https://github.com/<OWNER>/<REPOSITORY>/actions/workflows/<WORKFLOW_FILE>/badge.svg
+![Passed!]https://github.com/<NitronicM>/<learn-cicd-start-typescript>/actions/workflows/<ci.yml>/badge.svg
 
 # learn-cicd-typescript-starter (Notely)
 
