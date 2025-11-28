@@ -19,5 +19,5 @@ test("Correct http header", ()=>{
 test("Wrong http header", ()=>{
     expect(
         getAPIKey(mapWrong)
-    ).toBe("null")
+    ).toBe(null)
 })
