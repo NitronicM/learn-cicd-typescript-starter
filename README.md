@@ -1,4 +1,4 @@
-![CI](https://github.com/NitronicM/learn-cicd-typescript-starter/actions/workflows/ci.yml/badge.svg?branch=add-tests)
+![code coverage badge](https://github.com/mnawani/learn-cicd-typescript-starter/actions/workflows/ci.yml/badge.svg)
 
 
 # learn-cicd-typescript-starter (Notely)
