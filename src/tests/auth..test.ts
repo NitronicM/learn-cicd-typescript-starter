@@ -1,23 +1,19 @@
-import {expect, test} from "vitest"
-import { getAPIKey } from "../api/auth"
-import { IncomingHttpHeaders } from "http"
+import { expect, test } from "vitest";
+import { getAPIKey } from "../api/auth";
+import { IncomingHttpHeaders } from "http";
 
 const mapCorrect: IncomingHttpHeaders = {
-    authorization: "ApiKey Secret"
-}
+  authorization: "ApiKey Secret",
+};
 
 const mapWrong: IncomingHttpHeaders = {
-    authorization: "OnlyValue"
-}
+  authorization: "OnlyValue",
+};
 
-test("Correct http header", ()=>{
-    expect(
-        getAPIKey(mapCorrect)
-    ).toBe("Secret")
-})
+test("Correct http header", () => {
+  expect(getAPIKey(mapCorrect)).toBe("Secret");
+});
 
-test("Wrong http header", ()=>{
-    expect(
-        getAPIKey(mapWrong)
-    ).toBe(null)
-})
+test("Wrong http header", () => {
+  expect(getAPIKey(mapWrong)).toBe(null);
+});
